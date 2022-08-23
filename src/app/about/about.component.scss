@@ -1,0 +1,145 @@
+
+
+@import '../../styles.scss';
+
+
+.aboutContainer{
+  background-color: $dark-color;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.aboutSection{
+  width: 90%;
+  border-radius: 20px 0 0 20px;
+  // @include sectionShadow();
+
+  .aboutContent{
+    width: 90%;
+
+    .intro{
+      color: $light-color;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .title{
+      color: $accent-color;
+      font-weight: 300;
+      font-size: 1.5rem;
+    }
+
+    .description{
+      color: $light-color;
+      font-size: .8rem;
+    }
+  }
+}
+
+a{
+  text-decoration: none;
+  color: $teal;
+  @include transition();
+
+}
+
+a:hover{
+  color: $accent-color
+}
+
+///skills
+.skills{
+  .skills_row{
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 1.9rem;
+    padding-top: 1rem;
+
+
+  }
+  .box{
+    width: 100px;
+    gap: 0.4rem;
+    font-weight: 500;
+    text-align: center;
+   @include transition();
+  }
+  .box:hover{
+    transform: rotate(15deg) scale(1.09) ;
+    // transform: rotate(-15deg);
+  }
+
+  svg path{
+    fill: $teal;
+  }
+
+  polygon{
+    fill: $teal;
+  }
+
+  .skillName{
+    font-size: 0.7rem;
+    color: $dim-color;
+  }
+}
+
+.buttonClass {
+  border: solid 2px $light-color;
+  color:$light-color;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all .2s ease-in-out;
+
+  font-size:.8rem;
+  font-weight:500;
+  margin-right: 15px;
+  min-width: 125px;
+  padding:10px;
+}
+
+.buttonClass:hover {
+  box-shadow: 0 0 10px 1px $accent-color;
+  color: $accent-color;
+}
+
+
+
+@media screen and (max-width:500px){
+  .aboutSection{
+    background-color: none;
+  }
+  .aboutContent{
+    padding: 30px;
+  }
+  .skills_row{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media screen and (min-width: 500px) and (max-width:1050px){
+  .aboutContent{
+    padding: 75px;
+  }
+  // .aboutSection{
+  //   background-color: $dark-color2;
+  // }
+
+  .skills_row{
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media screen and (min-width: 1050px){
+  .aboutContent{
+    padding: 0px 100px 100px 100px;
+  }
+  // .aboutSection{
+  //   background-color: $dark-color2;
+  // }
+
+}

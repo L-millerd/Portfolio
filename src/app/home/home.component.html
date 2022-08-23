@@ -1,0 +1,60 @@
+
+<nav-component id="home"></nav-component>
+
+<div class="wrapper">
+
+  <div class="vertLine"></div>
+    <div class="homeContainer" >
+      <section class="heroSection">
+        <div class="heroContent">
+          <!-- <p class="intro"><span>Hi! my name is...</span></p> -->
+          <h1 class="name">Lisa Millerd</h1>
+          <h2 class="title">Full Stack Developer</h2>
+          <div class="description">Hi! I'm Lisa. I build, and sometimes design, things for the web. </div>
+          <div class="skills">
+            <!-- JavaScript | TypeScript | Angular | Node.js | jQuery | HTML | CSS | SCSS | mySQL | PHP | REST API | Strapi | DigitalOcean | GSAP | NativeScript | Wordpress -->
+            <ul>
+              <li>JavaScript |</li>
+              <li>TypeScript |</li>
+              <li>Angular |</li>
+              <li>Node.js |</li>
+              <li>jQuery |</li>
+              <li>HTML |</li>
+              <li>CSS |</li>
+              <li>SCSS |</li>
+              <li>mySQL |</li>
+              <li>PHP |</li>
+              <li>REST API |</li>
+              <li>Strapi |</li>
+              <li>DigitalOcean |</li>
+              <li>GSAP |</li>
+              <li>Wordpress |</li>
+            </ul>
+          </div>
+          <div class="buttonsRow">
+            <button class="btn buttonClass" (click)="scrollProjects()">Projects</button>
+            <button class="btn buttonClass" (click)="scrollContact()">Contact</button>
+          </div>
+        </div>
+        <!-- <div class="shape"></div> -->
+
+      </section>
+    </div>
+
+    <div class="appContainer">
+      <a class="anchor" id="about"></a>
+      <div class="number" id="one"><i (click)="scrollHome()"class="fa-solid fa-caret-up arrows"></i>01.<i (click)="scrollProjects()" class="fa-solid fa-caret-down arrows"></i></div>
+      <app-about></app-about>
+
+      <a class="anchor" id="projects"></a>
+      <div class="number" id="two"><i (click)="scrollAbout()"class="fa-solid fa-caret-up arrows"></i>02.<i (click)="scrollContact()" class="fa-solid fa-caret-down arrows"></i></div>
+      <app-projects></app-projects>
+
+      <a class="anchor" id="contact-2"></a>
+
+      <a class="anchor" id="contact"></a>
+      <div class="number" id="three"><i (click)="scrollProjects()"class="fa-solid fa-caret-up arrows"></i>03.<div (click)="scrollHome()" class="top">TOP</div></div>
+      <app-contact></app-contact>
+    </div>
+
+</div>

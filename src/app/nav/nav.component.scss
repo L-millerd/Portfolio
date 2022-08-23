@@ -1,0 +1,159 @@
+
+@import '../../styles.scss';
+
+
+.row{
+  --bs-gutter-x: 0;
+}
+
+.navbar{
+  font-family: 'Poppins', sans-serif;
+  background-color: $dark-color;
+
+  .navLogo{
+    max-width: 50px;
+  }
+
+  .navImages a{
+    padding-left: 30px;///
+
+    .socialIcons{
+      color: $accent-color;
+      max-width: 40px;
+      padding: 6px;
+    }
+
+    .navLogo:hover{
+      transform: rotate(360deg);
+      transition: transform 1s ease-out;
+    }
+
+  }
+
+
+/////Menu
+
+  ul {
+    padding: 0;
+    list-style: none;
+    // display: table;
+    // width: 600px;
+    text-align: center;
+    font-size: .8rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-around;
+  }
+
+
+  li {
+    display: table-cell;
+    position: relative;
+    padding: 15px 0;
+
+    a {
+      color: $light-color;
+      text-decoration: none;
+      letter-spacing: 0.05em;
+
+    }
+
+    a:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: $light-color;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+
+    a:hover{
+      color: $light-color
+    }
+    a:hover:after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+}
+
+
+
+  .navbar-toggler{
+    color:none !important;
+    border-color: none !important;
+
+  }
+  .burger{
+    display:flex;
+    justify-content: flex-end;
+    padding-right:30px;
+  }
+  .fa{
+    color: $accent-color;
+  }
+  button:focus{
+    outline: none;
+    box-shadow: none;
+    // border: 3px solid $accent-color;
+  }
+
+
+
+//not sure about this
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+/////HOVER LINE
+.hoverLine{
+  display:inline-block;
+}
+
+.hoverLine::after{
+  display:block;
+  content: '';
+  border-bottom: solid 3px $accent-color;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  padding-top: 5px;
+}
+
+.hoverLine:hover:after{
+  transform: scaleX(.7) ;
+}
+
+
+///Media Queries
+@media screen and (max-width:500px){
+  .hide{
+    display: none;
+  }
+}
+
+////IPAD
+@media screen and (min-width: 500px) and (max-width:992px){
+
+
+  .listCol ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+}
+/////FULL SCREEN
+@media screen and (min-width: 1050px){
+  ul{
+    width: 600px;
+  }
+
+
+}

@@ -1,0 +1,182 @@
+
+
+@import '../../styles.scss';
+
+
+.contactContainer{
+  margin: auto;
+}
+
+.intro{
+ width:95%;
+ margin: auto;
+}
+
+.contactLinks{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+
+  .fa{
+    padding-right: 15px;
+    font-size: 1.2rem;
+  }
+
+  a{
+    text-decoration: none;
+    color: $teal;
+    @include transition();
+  }
+  a:hover{
+    color: $accent-color;
+  }
+
+
+
+}
+
+.formContainer{
+  padding-top: 15px;
+  padding-bottom: 75px;
+  font-family: 'Poppins', sans-serif;
+  .hello{
+    color:$light-color;
+    font-weight:500;
+    font-size: 1.2rem;
+    // padding-bottom: 20px;
+  }
+  hr{
+    margin-top: 0px;
+  }
+}
+
+
+.form{
+  background-color: $dark-color2;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  input, textarea{
+    background: $dark-color;
+    border: none;
+    color: $light-color;
+  }
+
+  .alert{
+    font-size: 0.75rem;
+    color: $teal;
+    margin: 0;
+    padding: 2px;
+  }
+
+  label{
+    color: $dim-color;
+    font-size: 0.8rem;
+
+  }
+  input:focus, textarea:focus{
+    // border: 1px solid $accent-color;
+    // box-shadow:  0 0 0 0.2rem rgba(127, 205, 199, 0.4);
+    box-shadow:  0 0 0 0.1rem $dim-color;
+  }
+
+  //fixes autofill background color
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-text-fill-color: $light-color !important;
+    -webkit-box-shadow: 0 0 0px 1000px $dark-color2 inset;
+  }
+}
+
+///buttons
+
+.buttonRow{
+  padding-top: 1rem;
+}
+
+.buttonClass {
+  background-color: $light-color;
+  border: 2px solid $light-color;
+  color: $dark-color;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all .2s ease-in-out;
+
+
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all .2s ease-in-out;
+
+  width: 100%;
+  font-size:.8rem;
+  font-weight:500;
+  padding:10px 25px 10px 25px;
+}
+
+.buttonClass:hover {
+  background-color: rgb(189, 198, 215, .2);
+  color: $light-color;
+  transform: scale(1.03);
+}
+
+
+.btn:focus{
+  box-shadow: none !important;
+}
+
+.fa-solid{
+  color:$dim-color
+}
+
+
+////media querries
+@media screen and (max-width:500px){
+
+  .contactContainer{
+    max-width: 70%;
+  }
+
+  .form{
+    padding: 30px;
+  }
+
+  .contactWrapper{
+    padding-top: 100px;
+  }
+
+  .contactLinks{
+    display: block;
+  }
+}
+
+////IPAD
+@media screen and (min-width: 500px) and (max-width:1050px){
+  .contactContainer{
+    max-width: 70%;
+  }
+
+  .form{
+    padding: 80px;
+  }
+
+  .contactWrapper{
+    padding-top: 100px;
+  }
+
+}
+/////FULL SCREEN
+@media screen and (min-width: 1050px){
+
+  .contactContainer{
+    max-width: 70%;
+  }
+
+  .form{
+    padding: 80px;
+  }
+
+}
+

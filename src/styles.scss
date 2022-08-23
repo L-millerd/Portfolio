@@ -1,1 +1,67 @@
-/* You can add global styles to this file, and also import other style files */
+$dark-color: #141A29;
+$accent-color: #7fcdc7;
+// $dim-accent: #497e7a;
+$light-color: #BDC6D7;
+$dim-color: #7c828c;
+$teal: #598c88;
+$dark-color2:#252935;
+$purple: #4c3e4f;
+
+@mixin transition(){
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+@mixin sectionShadow{
+  -webkit-box-shadow: 0px 5px 22px 4px rgba(0,0,0,0.2);
+  box-shadow: 0px 5px 22px 4px rgba(0,0,0,0.2);
+}
+
+@mixin hoverGrow{
+  transform: scale(1.03);
+
+}
+
+html{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: $dark-color;
+}
+
+
+h1{
+  font-size: 4rem;
+  font-weight:500;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+p{
+  font-size: .8rem;
+  color: $light-color;
+  font-family: 'Poppins', sans-serif;
+
+
+}
+
+h2{
+  color: $light-color;
+  font-size: 2rem;
+  font-weight:500;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+///headings
+
+hr{
+  color: $light-color;
+}
+
+.fa-solid{
+  color: $dim-color;
+}
+
+
