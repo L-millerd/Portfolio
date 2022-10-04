@@ -27,23 +27,6 @@ export class AdminEditComponent implements OnInit {
   showDeleteMessage: string = "none";
   editError: any = '';
 
-  // revertProduct
-  title1: string = 'Salomon Wonder Snowboard';
-  description1: string ="One of Salomon's most versatile boards, the Wonder is designed for maximum performance and playfulness on all terrains, in all conditions. An advanced directional twin shape is built for switch riding, with lengthened contact points for soft snow performance that won't affect handling on groomers.";
-  price1: number = 475;
-  stock1: number = 10;
-
-  title2: string = 'Burton Feelgood Camber Snowboard';
-  description2: string ="Backed by Kelly Clark, the women’s Burton Feelgood Snowboard has been the defining force in women’s snowboarding for two decades. The Feelgood boasts a unique shape, matched with positively powerful pop for Ferrari-like handing.";
-  price2: number = 630;
-  stock2: number = 5;
-
-  title3: string = 'Salomon Lotus Snowboard';
-  description3: string ='Like a friend who waits for you to get up and clean off your goggles on a powder day, the Salomon Lotus Snowboard has that rare combination of trusty performance and easygoing likeability you need to take your riding to the next level. ';
-  price3: number = 550;
-  stock3: number = 3;
-////////////
-
   constructor(private bs:ButterService, private route:ActivatedRoute) { }
 
   deleteProduct(){
@@ -125,7 +108,7 @@ export class AdminEditComponent implements OnInit {
           console.log(response);
         })
     } else {
-      return 'No original content';
+      return null;
     }
   }
   //////
