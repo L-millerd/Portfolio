@@ -3,31 +3,39 @@ body{
 }
 
 .pageContainer{
-  height: 100vh;
+  min-height: 100vh;
   background-color: white;
   display: flex;
   justify-content: center;
 }
 
-.topLinks{
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px;
-  font-size: .8em;
-  color: #7c828c;
-  font-weight: 500;
 
-  a{
-    text-decoration: none;
-    color: #7c828c;
-  }
-}
 
 .editContainer{
   max-width: 70%;
   padding: 50px;
   background-color: #f1f1f1;
   min-width: 800px;
+  border-radius: 10px;
+  height: max-content;
+
+
+  .topLinks{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    font-size: .7em;
+    color: #7c828c;
+    font-weight: 500;
+
+
+    a{
+      text-decoration: none;
+      color: #7c828c;
+    }
+  }
+
+  //text
 
   .heading{
     text-align: center;
@@ -42,11 +50,28 @@ body{
 
   .title{
     font-family: 'Roboto', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1rem;
   }
 
+  //form
 
+  .form-label{
+    font-size: .7rem;
+    font-weight: 500;
+  }
+  .form-control{
+    font-size: .8rem;
+  }
+
+  ///buttons
+
+  .submitButtons{
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding-top: 20px;
+  }
 
   .buttonClass{
     padding: 12px 0px 12px 0px;
@@ -59,13 +84,39 @@ body{
     font-weight: 500;
     background-color: black;
     border: none;
-
     min-width: 150px;
-    margin-left: 20px;
   }
+
+
 }
 
+.messages{
+  font-size: .8rem;
+  text-align: right;
 
+  .fa-solid{
+    padding-right: 10px;
+  }
+  .success{
+    font-weight: 500;
+    padding-top: 20px;
+    color: green;
+    .fa-solid{
+      color: green;
+    }
+  }
+
+  .error{
+    font-weight: 500;
+    padding-top: 20px;
+    color: rgb(158, 20, 20);
+    .fa-solid{
+      color: rgb(158, 20, 20);
+    }
+  }
+
+
+}
 
 .footerClass{
   min-height: 200px;

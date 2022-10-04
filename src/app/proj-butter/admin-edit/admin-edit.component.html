@@ -16,9 +16,9 @@
     </div>
 
 
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Title</label>
-      <input [(ngModel)]="title" type="text" class="form-control" placeholder="Product Title" >
+    <div class="mt-3 mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input [(ngModel)]="title" id="title" type="text" class="form-control" placeholder="Product Title" >
     </div>
 
     <!-- <div class="mb-3">
@@ -43,31 +43,37 @@
     </div> -->
 
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Description</label>
-      <input [(ngModel)]="description" type="text" class="form-control" placeholder="Product description" >
+      <label for="description" class="form-label">Description</label>
+      <textarea [(ngModel)]="description" class="form-control" id="description" rows="4"></textarea>
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Price</label>
-      <input [(ngModel)]="price" type="text" class="form-control" placeholder="Numeric price only" >
+      <label for="price" class="form-label">Price</label>
+      <input [(ngModel)]="price" id="price" type="text" class="form-control" placeholder="Numeric price only" >
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Stock</label>
-      <input [(ngModel)]="stock" type="text" class="form-control" placeholder="Current stock" >
+      <label for="stock" class="form-label">Stock</label>
+      <input [(ngModel)]="stock" type="text" id="stock" class="form-control" placeholder="Current stock" >
     </div>
 
-    <button class="btn btn-primary buttonClass" (click) = "editProduct()">Update</button>
-    <button class="btn btn-primary buttonClass" (click) = "deleteProduct()" disabled>Delete</button>
+    <div class="submitButtons">
+      <button class="btn btn-primary buttonClass" (click) = "editProduct()">Update</button>
+      <button class="btn btn-primary buttonClass" (click) = "deleteProduct()" disabled>Delete</button>
+    </div>
 
 
     <!-- <div  *ngIf="deleted" class="success">**Successfully Added</div>
     <div  *ngIf="!deleted" class="error">**There's been an error</div> -->
+    <div class="messages">
+      <div  *ngIf="deleted" [style.display]="showDeleteMessage" class="success"><i class="fa-solid fa-circle-check"></i>Successfully Deleted</div>
+      <div  *ngIf="!deleted" [style.display]="showDeleteMessage" class="error"><i class="fa-solid fa-circle-xmark"></i>There's been an error</div>
 
-    <div  *ngIf="deleted" [style.display]="showDeleteMessage" class="success">**Successfully Deleted</div>
-    <div  *ngIf="!deleted" [style.display]="showDeleteMessage" class="error">**There's been an error</div>
+      <div  *ngIf="edited" [style.display]="showEditMessage" class="success"><i class="fa-solid fa-circle-check"></i>Successfully Updated</div>
+      <div  *ngIf="!edited" [style.display]="showEditMessage" class="error"><i class="fa-solid fa-circle-check"></i>There's been an error</div>
 
-    <div  *ngIf="edited" [style.display]="showEditMessage" class="success">**Successfully Updated</div>
-    <div  *ngIf="!edited" [style.display]="showEditMessage" class="error">**There's been an error</div>
-  <!-- </div> -->
+      <div  *ngIf="reverted" [style.display]="showRevertedMessage" class="success"><i class="fa-solid fa-circle-check"></i>Successfully Reverted</div>
+      <div  *ngIf="!reverted" [style.display]="showRevertedMessage" class="error"><i class="fa-solid fa-circle-check"></i>There's been an error</div>
+    </div>
+
 
   </div>
 </div>

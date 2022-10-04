@@ -14,14 +14,14 @@ export class ButterService {
   server = "https://starfish-app-m7u82.ondigitalocean.app";
 
   private url = this.server + "/womens";
-  private loginURL = "https://starfish-app-m7u82.ondigitalocean.app/login";
-  private viewURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-view";
-  private addURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-add";
-  private editURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-edit";
-  private deleteURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-delete";
-  private updateURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-update";
-  private toggleURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-toggle";
-  private revertURL = "http://localhost:4400/admin-revert";
+  private loginURL = this.server + "/login";
+  private viewURL = this.server + "/admin-view";
+  private addURL = this.server + "/admin-add";
+  private editURL = this.server + "/admin-edit";
+  private deleteURL = this.server + "/admin-delete";
+  private updateURL = this.server + "/admin-update";
+  private toggleURL = this.server + "/admin-toggle";
+  private revertURL = this.server + "/admin-revert";
 
   getAllProducts(){
     return this.http.get<any>(this.url);

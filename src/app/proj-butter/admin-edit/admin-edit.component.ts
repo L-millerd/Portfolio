@@ -21,10 +21,11 @@ export class AdminEditComponent implements OnInit {
 
   deleted:Boolean = false;
   edited: Boolean = false;
-  online: Boolean = false;
+  reverted: Boolean = false;
 
   showEditMessage: string = "none";
   showDeleteMessage: string = "none";
+  showRevertedMessage: string = "none";
   editError: any = '';
 
   constructor(private bs:ButterService, private route:ActivatedRoute) { }
@@ -33,7 +34,6 @@ export class AdminEditComponent implements OnInit {
     if(confirm("Are you sure? Deleting this product will be permanent")){
       let productID = this.route.snapshot.paramMap.get("id");
       this.bs.deleteProduct(productID).subscribe( response =>{
-      // console.log(response);
       this.showDeleteMessage = "block";
       this.deleted = response.deleted;
       })
@@ -54,7 +54,6 @@ export class AdminEditComponent implements OnInit {
       this.description,
       this.price,
       this.stock).subscribe( response =>{
-        console.log(response);
         this.edited = response.edited;
         this.showEditMessage = "block";
         this.editError = response.message;
@@ -69,7 +68,12 @@ export class AdminEditComponent implements OnInit {
       this.title = 'Saloman Wonder Snowboard',
       this.description = "One of Salomon's most versatile boards, the Wonder is designed for maximum performance and playfulness on all terrains, in all conditions. An advanced directional twin shape is built for switch riding, with lengthened contact points for soft snow performance that won't affect handling on groomers.",
       this.price = 475,
-      this.stock = 10
+      this.stock = 10,
+
+      this.reverted = true;
+      this.showEditMessage = "none";
+      this.showRevertedMessage = "block";
+
 
       this.bs.revertProduct(
         productID,
@@ -85,6 +89,11 @@ export class AdminEditComponent implements OnInit {
       this.price = 630,
       this.stock = 5
 
+      this.reverted = true;
+      this.showEditMessage = "none";
+      this.showRevertedMessage = "block";
+
+
       this.bs.revertProduct(
         productID,
         this.title,
@@ -98,6 +107,11 @@ export class AdminEditComponent implements OnInit {
       this.description = 'Like a friend who waits for you to get up and clean off your goggles on a powder day, the Salomon Lotus Snowboard has that rare combination of trusty performance and easygoing likeability you need to take your riding to the next level. ',
       this.price = 550,
       this.stock = 3
+
+      this.reverted = true;
+      this.showEditMessage = "none";
+      this.showRevertedMessage = "block";
+
 
       this.bs.revertProduct(
         productID,
