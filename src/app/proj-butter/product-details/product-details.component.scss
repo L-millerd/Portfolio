@@ -17,19 +17,31 @@ body{
 
 
 h1{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  font-size: 3em;
+  margin: auto;
+  font-weight: 500;
   text-align: center;
-  padding: 2em 0px 2em 0px;
+  padding: 50px;
+  font-weight: 700;
+  font-size: 1.5rem
 }
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: rgb(48, 48, 48);
+}
+
 
 .allContainer{
   max-width: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .productContainer{
-  max-width: 100%;
-  //max-width: 1500px;
+  // max-width: 100%;
+  max-width: 1500px;
   padding-bottom: 10em;
   padding-left: 4em;
   padding-right: 4em;
@@ -50,20 +62,20 @@ h1{
     .title{
       font-family: 'Roboto', sans-serif;
       font-weight: 900;
-      font-size: 1.6em;
+      font-size: 1.3rem;
       padding-top: 1em;
     }
 
     .description{
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
-      font-size: 1.2em;
+      // font-size: 1rem;
     }
 
     .price{
       font-family: 'Roboto', sans-serif;
       font-weight: 600;
-      font-size: 1.4em;
+      // font-size: 1.4em;
 
     }
 
@@ -77,14 +89,15 @@ h1{
     }
 
     .addBtn{
-      width: 225px;
+      // width: 225px;
       padding: 12px 0px 12px 0px;
       color:white;
       font-family: 'Roboto', sans-serif;
       font-weight: 600;
       text-decoration: none;
       //text-align: center;
-      font-size: 1em;
+      font-size: 0.8em;
+      border-radius:5px;
       font-weight: bold;
       background-color: #836063;
       border: none;
@@ -97,9 +110,7 @@ h1{
 
   }
 
-
 }
-
 
 .footerClass{
   min-height: 200px;
@@ -109,5 +120,5 @@ h1{
 
 .stock{
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 0.7rem;
 }

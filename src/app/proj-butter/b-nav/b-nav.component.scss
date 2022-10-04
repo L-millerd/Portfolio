@@ -1,6 +1,10 @@
 .navLogo{
-  max-width: 150px;
-  margin: 10px;
+  max-width: 115px;
+  // margin: 10px;
+}
+
+li{
+  font-size: 0.7rem;
 }
 
 .myNav{
@@ -13,6 +17,7 @@
 
 .nav-link {
  color: black !important;
+ font-size: 0.7rem;
 }
 
 .disabled{

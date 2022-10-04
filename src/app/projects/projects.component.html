@@ -13,8 +13,6 @@
 
             <ul class="skills">
               <li>Angular</li>
-              <!-- <li>HTML</li> -->
-              <!-- <li>CSS</li> -->
               <li>Node.js</li>
               <li>mySQL</li>
               <li>REST API</li>
@@ -24,7 +22,7 @@
             <p>Ecommerce website created as part of a 4 hour challenge.  Product display and CRUD admin portal created using node.js and mySQL stored procedures. </p>
             <div class="linksRow">
               <a routerLink="/projects/butter-snowboards/products" target="_blank"><button class="btn buttonClass">View</button></a>
-              <a href="https://github.com/L-millerd/Ecommerce-Snowboard"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
+              <a href="https://github.com/L-millerd/Ecommerce-Snowboard" target="_blank"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
             </div>
           </div>
 
@@ -34,29 +32,7 @@
 
         </div>
       </div>
-      <!--remove-->
-      <!-- <div class="projectCardWrapper" >
-        <div class="projectCard row">
-          <div class="cardInfo col-sm-12 col-md-12 col-lg-8 ">
-            <h3>{{projects[0].attributes.Title}}</h3>
 
-            <ul class="skills">
-              <li *ngFor="let skill of projects[0].attributes.skills.data">{{skill.attributes.SkillName}}</li>
-            </ul>
-
-            <p>{{projects[0].attributes.Summary}}</p>
-            <div class="linksRow">
-              <a [href]="projects[0].attributes.WebLink" target="_blank"><button class="btn buttonClass">View</button></a>
-              <a [href]="projects[0].attributes.GitLink"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
-            </div>
-          </div>
-
-          <div class="cardImage col-sm-12 col-md-12 col-lg-4" style="background-image: url('{{projects[0].attributes.imageLink}}');">
-          </div>
-
-        </div>
-      </div> -->
-      <!--remove-->
 
       <div class="projectCardWrapper" *ngFor="let project of projects;" >
         <div class="projectCard row">
@@ -70,7 +46,7 @@
             <p>{{project.attributes.Summary}}</p>
             <div class="linksRow">
               <a [href]="project.attributes.WebLink" target="_blank"><button class="btn buttonClass">View</button></a>
-              <a [href]="project.attributes.GitLink"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
+              <a [href]="project.attributes.GitLink" target="_blank"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
             </div>
           </div>
 

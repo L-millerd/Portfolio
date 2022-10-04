@@ -1,5 +1,14 @@
 body{
   font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+}
+
+.btn{
+  font-size: 0.8rem;
+}
+
+.table{
+  font-size: 0.8rem;
 }
 
 .image{
@@ -25,10 +34,17 @@ h1{
   padding-top: 1em;
 }
 
+.form-switch{
+  padding-left: none;
+}
+
 
 .allContainer{
   max-width: 90%;
   padding-top: 100px;
   margin: auto;
 }
+
+
+
 

@@ -11,15 +11,7 @@ $dark-color2:#252935;
   transition: 0.3s;
 }
 
-// .shape{
-//   position: absolute;
-//   width: 200px;
-//   height: 200px;
-//   background-color: $accent-color;
-//   top: 25%;
-//   left: 75%;
-//   z-index: -1;
-// }
+
 
 .wrapper{
   background-color: $dark-color;
@@ -91,9 +83,7 @@ $dark-color2:#252935;
         padding-left: 0;
         line-height: 1;
       }
-      li{
-        // display: inline;
-      }
+
     }
 
 
@@ -136,11 +126,13 @@ $dark-color2:#252935;
   color: #497e7a;
   padding-left: 0.6rem;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .top{
   color: #497e7a;
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .anchor{

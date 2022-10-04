@@ -1,16 +1,23 @@
 <app-b-nav></app-b-nav>
 <div class="hero" [ngStyle]="{backgroundImage:'url(../../assets/butter-assets/butter_snowboards_hero.jpg)'}">
+  <!-- <img src="../../../assets/butter-assets/butter_logo_black.png"> -->
+  <!-- <div class="heroText"> -->
+    <h1>Women's Boards</h1>
+    <div class="subhead">Find your ride or die board with Butter Boards. Serving the best selection in women's boards since 2007</div>
 </div>
 
 <div class="allContainer">
 
+  <div class="heading">Women's Snowboards
+    <p>Women’s snowboard options for park, all-mountain, powder, freestyle, and backcountry snowboards.</p>
+  </div>
+
   <div class="productRow row">
-    <div class="productCol col-4" *ngFor="let item of womens">
+    <div class="productCol col-sm-12 col-md-4 col-lg-4" *ngFor="let item of womens">
       <img class="productImg" [src]="item.image">
       <!-- <img class="productImg" src="../../assets/butter-assets/assassin1.jpg"> -->
       <h4 class="title">{{item.title}}</h4>
       <div class="price">{{item.price | currency}}</div>
-      <div class="stock">{{item.stock}} Available</div>
       <div class="btnRow row">
         <!-- <div class="heart col-3"></div> -->
         <a [routerLink]="[item.id]"><button class="addBtn col-9">View</button></a>

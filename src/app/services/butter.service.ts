@@ -21,10 +21,10 @@ export class ButterService {
   private deleteURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-delete";
   private updateURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-update";
   private toggleURL = "https://starfish-app-m7u82.ondigitalocean.app/admin-toggle";
+  private revertURL = "http://localhost:4400/admin-revert";
 
   getAllProducts(){
     return this.http.get<any>(this.url);
-    // return this.http.get<Product[]>(this.url);
 
   }
 
@@ -42,7 +42,6 @@ export class ButterService {
     return this.http.post<Login>(this.loginURL, loginBody);
   }
 
-  ///online doesn't exist on type product[]
   displayProducts(){
     return this.http.get<Product[]>(this.viewURL);
   }
@@ -85,6 +84,18 @@ export class ButterService {
     }
     return this.http.put<{ edited:Boolean, message:any}>(this.updateURL + "/" + id, editBody)
   }
+
+  ///revert
+  revertProduct(id:any, title: string, description: string, price: number, stock: number){
+    let revertBody = {
+      title: title,
+      description: description,
+      price: price,
+      stock: stock
+    }
+    return this.http.put<{ reverted:Boolean, message:any}>(this.revertURL + "/" + id, revertBody)
+  }
+  ////
 
   toggleLive(id:any){
     let toggleBody = {
