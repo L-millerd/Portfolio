@@ -23,7 +23,8 @@
         <th scope="row" ><img class="image" [src] = "item.image"></th>
         <td class="title">{{item.title}}</td>
         <td>{{item.description}}</td>
-        <td>{{item.price}}</td>
+        <td>{{item.price | currency}}
+        </td>
         <td>{{item.stock}}</td>
         <td>
           <div class="form-check form-switch">

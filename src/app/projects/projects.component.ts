@@ -14,6 +14,7 @@ export class ProjectsComponent implements OnInit {
   projects2:any[] = [];
   server = environment.server;
 
+
   constructor(private cs: CommonService) { }
 
   ngOnInit(): void {

@@ -19,6 +19,7 @@ export class AdminEditComponent implements OnInit {
   price: number;
   stock: number;
 
+  //for messages
   deleted:Boolean = false;
   edited: Boolean = false;
   reverted: Boolean = false;
@@ -27,6 +28,22 @@ export class AdminEditComponent implements OnInit {
   showDeleteMessage: string = "none";
   showRevertedMessage: string = "none";
   editError: any = '';
+
+  // ogContent: [{}] = [
+  //   {
+  //     description: "One of Salomon's most versatile boards, the Wonder is designed for maximum performance and playfulness on all terrains, in all conditions. An advanced directional twin shape is built for switch riding, with lengthened contact points for soft snow performance that won't affect handling on groomers.",
+  //     id: 1,
+  //     image: "../../assets/butter-assets/saloman1.jpg",
+  //     image2: "../../assets/butter-assets/saloman2.jpg",
+  //     image3: "../../assets/butter-assets/saloman3.jpg",
+  //     image4: "../../assets/butter-assets/saloman4.jpg",
+  //     image5: "../../assets/butter-assets/saloman3.jpg",
+  //     online: 1,
+  //     price: "475.00",
+  //     stock: 10,
+  //     title: "Saloman Wonder Snowboard",
+  //   }
+  // ]
 
   constructor(private bs:ButterService, private route:ActivatedRoute) { }
 
@@ -61,13 +78,14 @@ export class AdminEditComponent implements OnInit {
   }
 
   ///revert
+
   revertProduct(){
     let productID = this.route.snapshot.paramMap.get("id");
 
     if (productID === "1"){
       this.title = 'Saloman Wonder Snowboard',
       this.description = "One of Salomon's most versatile boards, the Wonder is designed for maximum performance and playfulness on all terrains, in all conditions. An advanced directional twin shape is built for switch riding, with lengthened contact points for soft snow performance that won't affect handling on groomers.",
-      this.price = 475,
+      this.price = 475.95,
       this.stock = 10,
 
       this.reverted = true;
@@ -86,7 +104,7 @@ export class AdminEditComponent implements OnInit {
     } else if (productID === "2"){
       this.title = 'Burton Feelgood Camber Snowboard',
       this.description = "Backed by Kelly Clark, the women’s Burton Feelgood Snowboard has been the defining force in women’s snowboarding for two decades. The Feelgood boasts a unique shape, matched with positively powerful pop for Ferrari-like handing.",
-      this.price = 630,
+      this.price = 629.99,
       this.stock = 5
 
       this.reverted = true;
@@ -105,7 +123,7 @@ export class AdminEditComponent implements OnInit {
     } else if (productID === "3"){
       this.title = 'Salomon Lotus Snowboard',
       this.description = 'Like a friend who waits for you to get up and clean off your goggles on a powder day, the Salomon Lotus Snowboard has that rare combination of trusty performance and easygoing likeability you need to take your riding to the next level. ',
-      this.price = 550,
+      this.price = 549.99,
       this.stock = 3
 
       this.reverted = true;
@@ -119,13 +137,14 @@ export class AdminEditComponent implements OnInit {
         this.description,
         this.price,
         this.stock).subscribe( response =>{
-          console.log(response);
+          // console.log(response);
         })
     } else {
       return null;
     }
   }
-  //////
+  ////
+
 
 
   ngOnInit(): void {
@@ -141,7 +160,6 @@ export class AdminEditComponent implements OnInit {
       this.price = singleProduct.price;
       this.stock = singleProduct.stock;
     });
-
   }
 
 }

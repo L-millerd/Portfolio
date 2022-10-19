@@ -13,6 +13,7 @@ export class AdminViewComponent implements OnInit {
   flexSwitchCheckDefault:boolean = true;
   checked = "flexSwitchCheckChecked";
 
+  
   products:Product[] =[];
 
   constructor(private bs:ButterService) { }
@@ -20,15 +21,14 @@ export class AdminViewComponent implements OnInit {
   toggleLive(productID:number){
 
     this.bs.toggleLive(productID).subscribe( response =>{
-      console.log(response);
+      // console.log(response);
     })
   }
 
   ngOnInit(): void {
     this.bs.displayProducts().subscribe( products =>{
       this.products = products;
-
-     console.log(products);
+    //  console.log(products);
     })
   }
 

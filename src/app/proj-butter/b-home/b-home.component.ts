@@ -13,10 +13,35 @@ export class BHomeComponent implements OnInit {
 
   womens:Product[]= [];
 
-  ngOnInit(): void {
+  lowHigh(){
+    this.womens.sort(function(a,b){
+      return a.price - b.price;
+    })
+  }
+
+  highLow(){
+    this.womens.sort(function(a,b){
+      return b.price - a.price;
+    })
+  }
+
+  available(){
+    this.womens = this.womens.filter(product =>{
+      return product.stock >= 1;
+    })
+
+  }
+
+  allProducts(){
     this.bs.getAllProducts().subscribe( womens => {
-      console.log(womens);
       this.womens = womens;
     })
+  }
+
+  ngOnInit(): void {
+    // this.bs.getAllProducts().subscribe( womens => {
+    //   this.womens = womens;
+    // })
+    this.allProducts();
   }
 }
