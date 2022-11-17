@@ -1,33 +1,16 @@
-export interface Projects{
-  data:[{
-    attributes:{
-      Title: string;
-      Summary: string;
-      Description: string;
-      WebLink: string;
-      StartDate: string;
-      EndDate: string;
-      ClientName: string;
-      Category: string;
-      GitLink: string;
-      Image:{
-        data:{
-          attributes:{
-            formats:{
-              url: string;
+export interface Projects
+  {
+    id: number,
+    attributes: {
+      Title: string,
+      Summary: string,
+      WebLink: string,
+      GitLink: string,
+      ImageLink: string,
+      Skills: [
+            {
+              SkillName: string
             }
-          }
-        }
-      }
-      skills:{
-        data: [
-          {
-            atttributes:{
-              SkillName: string;
-            }
-          }
-        ]
+          ]
       }
     }
-  }]
-}

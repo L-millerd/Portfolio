@@ -1,0 +1,77 @@
+[
+  {
+  "id": 1,
+  "attributes": {
+    "Title": "The Cakery",
+    "Summary": "Designed and built a 5 page e-commerce website based on client specified parameters. Displays and filters product info using Javascript.",
+    "WebLink": "https://l-millerd.github.io/The-Cakery/",
+    "GitLink": "https://github.com/L-millerd/The-Cakery",
+    "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659814795/small_cakery_screenshot_db5a222d1e.jpg",
+    "Skills": [
+          {
+            "SkillName": "JavaScript"
+          },
+          {
+            "SkillName": "HTML"
+          },
+          {
+            "SkillName": "SCSS"
+          },
+          {
+            "SkillName": "Illustrator"
+          }
+        ]
+    }
+  },
+
+  {
+    "id": 2,
+    "attributes": {
+      "Title": "Two Tugs Brewery",
+      "Summary": "Designed and built 5 page business page based on client specifications. Branding/packaging created with illustrator and figma, site developed with HTML and CSS.",
+      "WebLink": "https://l-millerd.github.io/TwoTugs/",
+      "GitLink": "https://github.com/L-millerd/TwoTugs",
+      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659814904/small_cover_TT_c6f466dd3c.jpg",
+      "Skills": [
+            {
+              "SkillName": "HTML"
+            },
+            {
+              "SkillName": "CSS"
+            },
+            {
+              "SkillName": "Illustrator"
+            },
+            {
+              "SkillName": "Figma"
+            }
+          ]
+      }
+    },
+
+      {
+        "id": 3,
+        "attributes": {
+          "Title": "Bloom Florals",
+          "Summary": "Ecommerce page created as part of a 4 hour challenge. Product information displayed and filtered from the database using PHP, mySQL and stored procedures.",
+          "WebLink": "https://bloom.lmillerd.com/",
+          "GitLink": "https://github.com/L-millerd/Bloom-Florist",
+          "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659815580/small_cover_bloom_416abfe964.jpg",
+          "Skills": [
+                {
+                  "SkillName": "SQL"
+                },
+                {
+                  "SkillName": "PHP"
+                },
+                {
+                  "SkillName": "HTML"
+                },
+                {
+                  "SkillName": "CSS"
+                }
+              ]
+          }
+        }
+
+]

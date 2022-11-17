@@ -14,7 +14,7 @@
             <ul class="skills">
               <li>Angular</li>
               <li>Node.js</li>
-              <li>mySQL</li>
+              <li>SQL</li>
               <li>REST API</li>
               <li>TypeScript</li>
             </ul>
@@ -40,9 +40,8 @@
             <h3>{{project.attributes.Title}}</h3>
 
             <ul class="skills">
-              <li *ngFor="let skill of project.attributes.skills.data">{{skill.attributes.SkillName}}</li>
+              <li *ngFor="let skill of project.attributes.Skills">{{skill.SkillName}}</li>
             </ul>
-
             <p>{{project.attributes.Summary}}</p>
             <div class="linksRow">
               <a [href]="project.attributes.WebLink" target="_blank"><button class="btn buttonClass">View</button></a>
@@ -50,13 +49,35 @@
             </div>
           </div>
 
-          <!-- <div class="cardImage col-sm-12 col-md-12 col-lg-4" style="background-image: url('{{project.attributes.imageLink}}');"> -->
+          <div class="cardImage col-sm-12 col-md-12 col-lg-5">
+            <div class="bg-img"  style="background-image: url('{{project.attributes.ImageLink}}');"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- from Strapi -->
+      <!-- <div class="projectCardWrapper" *ngFor="let project of projects;" >
+        <div class="projectCard row">
+          <div class="cardInfo col-sm-12 col-md-12 col-lg-7 ">
+            <h3>{{project.attributes.Title}}</h3>
+
+            <ul class="skills">
+              <li *ngFor="let skill of project.attributes.skills.data">{{skill.attributes.SkillName}}</li>
+            </ul>
+            <p>{{project.attributes.Summary}}</p>
+            <div class="linksRow">
+              <a [href]="project.attributes.WebLink" target="_blank"><button class="btn buttonClass">View</button></a>
+              <a [href]="project.attributes.GitLink" target="_blank"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
+            </div>
+          </div>
+
           <div class="cardImage col-sm-12 col-md-12 col-lg-5">
             <div class="bg-img"  style="background-image: url('{{project.attributes.imageLink}}');"></div>
           </div>
 
         </div>
-      </div>
+      </div> -->
     </section>
 
 
