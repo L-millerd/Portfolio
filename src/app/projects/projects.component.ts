@@ -20,6 +20,7 @@ export class ProjectsComponent implements OnInit {
 
   ngOnInit(): void {
     //gets from strapi
+
     // this.cs.getProjects().subscribe( res =>{
     //   this.projects = res.data;
     // })
