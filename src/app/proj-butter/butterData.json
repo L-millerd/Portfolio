@@ -1,0 +1,80 @@
+[
+    {
+      "id": 1,
+      "image": "../../assets/butter-assets/saloman1.jpg",
+      "image2": "../../assets/butter-assets/saloman2.jpg",
+      "image3": "../../assets/butter-assets/saloman3.jpg",
+      "image4": "../../assets/butter-assets/saloman4.jpg",
+      "image5": "../../assets/butter-assets/saloman3.jpg",
+      "title": "Saloman Wonder Snowboard",
+      "description": "One of Salomon's most versatile boards, the Wonder is designed for maximum performance and playfulness on all terrains, in all conditions. An advanced directional twin shape is built for switch riding, with lengthened contact points for soft snow performance that won't affect handling on groomers.",
+      "price": "465.00",
+      "stock": 10,
+      "online": 1
+    },
+    {
+      "id": 2,
+      "image": "../../assets/butter-assets/burton1.jpg",
+      "image2": "../../assets/butter-assets/burton2.jpg",
+      "image3": "../../assets/butter-assets/burton3.jpg",
+      "image4": "../../assets/butter-assets/burton4.jpg",
+      "image5": "../../assets/butter-assets/burton5.jpg",
+      "title": "Burton Feelgood Camber Snowboard",
+      "description": "Backed by Kelly Clark, the women’s Burton Feelgood Snowboard has been the defining force in women’s snowboarding for two decades. The Feelgood boasts a unique shape, matched with positively powerful pop for Ferrari-like handing.",
+      "price": "599.99",
+      "stock": 6,
+      "online": 1
+    },
+    {
+      "id": 3,
+      "image": "../../assets/butter-assets/assassin1.jpg",
+      "image2": "../../assets/butter-assets/assassin2.jpg",
+      "image3": "../../assets/butter-assets/assassin3.jpg",
+      "image4": "../../assets/butter-assets/assassin4.jpg",
+      "image5": "../../assets/butter-assets/assassin5.jpg",
+      "title": "Salomon Lotus Snowboard",
+      "description": "Like a friend who waits for you to get up and clean off your goggles on a powder day, the Salomon Lotus Snowboard has that rare combination of trusty performance and easygoing likeability you need to take your riding to the next level. ",
+      "price": "550.95",
+      "stock": 4,
+      "online": 1
+    },
+    {
+      "id": 4,
+      "image": "../../assets/butter-assets/burton-hideaway.png",
+      "image2": "../../assets/butter-assets/burton-hideaway2.png",
+      "image3": "../../assets/butter-assets/burton-hideaway3.png",
+      "image4": "",
+      "image5": "",
+      "title": "Burton Hideaway Snowboard",
+      "description": "Grab the Burton Hideaway Snowboard for its easygoing personality and smooth turning capabilities, and strike out on a new snowboarding career. This is the perfect board to hole up by yourself in a secret location and ride every day until you get it. ",
+      "price": "530.00",
+      "stock": 0,
+      "online": 1
+    },
+    {
+      "id": 5,
+      "image": "../../assets/butter-assets/burton-yeasayer.png",
+      "image2": "../../assets/butter-assets/burton-yeasayer2.png",
+      "image3": "../../assets/butter-assets/burton-yeasayer3.png",
+      "image4": "",
+      "image5": "",
+      "title": "Burton Yeasayer Flying V Snowboard",
+      "description": "Say yes to fresh snow. Say yes to frosty mornings, early wake up calls, and full throated carpool karaoke singalongs on the way to the way to go shred your heart out. The Burton Yeasayer Flying V Snowboard encompasses that positive, down-for-anything attitude in a mellow all-mountain board that's up for anything.",
+      "price": "595.95",
+      "stock": 76,
+      "online": 1
+    },
+    {
+      "id": 6,
+      "image": "../../assets/butter-assets/saloman-lotus.png",
+      "image2": "../../assets/butter-assets/saloman-lotus2.png",
+      "image3": "../../assets/butter-assets/saloman-lotus3.png",
+      "image4": null,
+      "image5": null,
+      "title": "Salomon Lotus Snowboard",
+      "description": "Do your body a favor and make the learning process a little easier with the Salomon Lotus Snowboard. The Directional Twin shape is great at transitioning from falling leaf to linked turns, and the Bite Free Edges will give you a catch-free ride. A soft flex paired with Flat Out Camber is less aggressive than other camber profiles.",
+      "price": "349.95",
+      "stock": 102,
+      "online": 1
+    }
+  ]

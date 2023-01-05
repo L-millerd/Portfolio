@@ -47,31 +47,7 @@
             }
           ]
       }
-    },
+    }
 
-      {
-        "id": 3,
-        "attributes": {
-          "Title": "Bloom Florals",
-          "Summary": "Ecommerce page created as part of a 4 hour challenge. Product information displayed and filtered from the database using PHP, mySQL and stored procedures.",
-          "WebLink": "https://bloom.lmillerd.com/",
-          "GitLink": "https://github.com/L-millerd/Bloom-Florist",
-          "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659815580/small_cover_bloom_416abfe964.jpg",
-          "Skills": [
-                {
-                  "SkillName": "SQL"
-                },
-                {
-                  "SkillName": "PHP"
-                },
-                {
-                  "SkillName": "HTML"
-                },
-                {
-                  "SkillName": "CSS"
-                }
-              ]
-          }
-        }
 
 ]

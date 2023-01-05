@@ -1,14 +1,12 @@
-
-
 <div class="projectsContainer">
   <div class="projectsContent">
     <h2><i class="fa-solid fa-gear"></i> Projects</h2>
-    <hr>
-    <section class="projectList" >
-
-      <div class="projectCardWrapper" >
+    <hr />
+    <p>Please see Git links for full project</p>
+    <section class="projectList">
+      <div class="projectCardWrapper">
         <div class="projectCard row">
-          <div class="cardInfo col-sm-12 col-md-12 col-lg-7 ">
+          <div class="cardInfo col-sm-12 col-md-12 col-lg-7">
             <h3>Butter Snowboards</h3>
 
             <ul class="skills">
@@ -19,40 +17,64 @@
               <li>TypeScript</li>
             </ul>
 
-            <p>Ecommerce website created as part of a 4 hour challenge.  Product display and CRUD admin portal created using node.js and mySQL stored procedures. </p>
+            <p>
+              Microservices based e-commerce SPA created as part of a 4 hour
+              challenge. Product display and CRUD admin portal created using
+              node.js and mySQL stored procedures. **Please see git repo for
+              backend functionality
+            </p>
             <div class="linksRow">
-              <a routerLink="/projects/butter-snowboards/products" target="_blank"><button class="btn buttonClass">View</button></a>
-              <a href="https://github.com/L-millerd/Portfolio/tree/master/src/app/proj-butter" target="_blank"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
+              <a
+                routerLink="/projects/butter-snowboards/products"
+                target="_blank"
+                ><button class="btn buttonClass">Demo</button></a
+              >
+              <a
+                href="https://github.com/L-millerd/Ecommerce-Snowboard"
+                target="_blank"
+                ><i class="socialIcon fa-xl fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
 
           <div class="cardImage col-sm-12 col-md-12 col-lg-5">
-            <div class="bg-img"  style="background-image: url('https://res.cloudinary.com/l-millerd/image/upload/v1659814819/small_butter_screenshot_ae7a3b0bf5.jpg');"></div>
+            <div
+              class="bg-img"
+              style="
+                background-image: url('https://res.cloudinary.com/l-millerd/image/upload/v1659814819/small_butter_screenshot_ae7a3b0bf5.jpg');
+              "
+            ></div>
           </div>
-
         </div>
       </div>
 
-
-      <div class="projectCardWrapper" *ngFor="let project of projects;" >
+      <div class="projectCardWrapper" *ngFor="let project of projects">
         <div class="projectCard row">
-          <div class="cardInfo col-sm-12 col-md-12 col-lg-7 ">
-            <h3>{{project.attributes.Title}}</h3>
+          <div class="cardInfo col-sm-12 col-md-12 col-lg-7">
+            <h3>{{ project.attributes.Title }}</h3>
 
             <ul class="skills">
-              <li *ngFor="let skill of project.attributes.Skills">{{skill.SkillName}}</li>
+              <li *ngFor="let skill of project.attributes.Skills">
+                {{ skill.SkillName }}
+              </li>
             </ul>
-            <p>{{project.attributes.Summary}}</p>
+            <p>{{ project.attributes.Summary }}</p>
             <div class="linksRow">
-              <a [href]="project.attributes.WebLink" target="_blank"><button class="btn buttonClass">View</button></a>
-              <a [href]="project.attributes.GitLink" target="_blank"><i class="socialIcon fa-xl fa-brands fa-github"></i></a>
+              <a [href]="project.attributes.WebLink" target="_blank"
+                ><button class="btn buttonClass">Demo</button></a
+              >
+              <a [href]="project.attributes.GitLink" target="_blank"
+                ><i class="socialIcon fa-xl fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
 
           <div class="cardImage col-sm-12 col-md-12 col-lg-5">
-            <div class="bg-img"  style="background-image: url('{{project.attributes.ImageLink}}');"></div>
+            <div
+              class="bg-img"
+              style="background-image: url('{{project.attributes.ImageLink}}');"
+            ></div>
           </div>
-
         </div>
       </div>
 
@@ -79,9 +101,5 @@
         </div>
       </div> -->
     </section>
-
-
   </div>
 </div>
-
-

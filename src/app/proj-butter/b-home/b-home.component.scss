@@ -73,9 +73,10 @@ p{
 
 .filters{
   display: flex;
-  gap: 1em;
+  gap: 1.2em;
   font-size: 0.6rem;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .productRow{

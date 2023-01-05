@@ -30,12 +30,12 @@
           <div class="form-check form-switch">
 
             <div *ngIf="item.online == 1" class="form-check form-switch">
-              <input  class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked (click)="toggleLive(item.id)">
+              <input  class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked (click)="toggleOn(item.id)">
               <label class="form-check-label" for="flexSwitchCheckChecked"></label>
             </div>
 
             <div *ngIf="item.online == 0"  class="form-check form-switch" >
-              <input *ngIf="item.online == 0" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" (click)="toggleLive(item.id)">
+              <input *ngIf="item.online == 0" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" (click)="toggleOff(item.id)">
               <label class="form-check-label" for="flexSwitchCheckChecked"></label>
             </div>
 
