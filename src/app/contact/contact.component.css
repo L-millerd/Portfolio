@@ -1,0 +1,172 @@
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: #141A29;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #BDC6D7;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #BDC6D7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  color: #BDC6D7;
+}
+
+.fa-solid {
+  color: #7c828c;
+}
+
+.contactContainer {
+  margin: auto;
+}
+
+.intro {
+  width: 95%;
+  margin: auto;
+}
+
+.contactLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contactLinks .fa {
+  padding-right: 15px;
+  font-size: 1.2rem;
+}
+.contactLinks a {
+  text-decoration: none;
+  color: #598c88;
+  transition: all 0.3s ease-in-out;
+}
+.contactLinks a:hover {
+  color: #7fcdc7;
+}
+
+.formContainer {
+  padding-top: 15px;
+  padding-bottom: 75px;
+  font-family: "Poppins", sans-serif;
+}
+.formContainer .hello {
+  color: #BDC6D7;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.formContainer hr {
+  margin-top: 0px;
+}
+
+.form {
+  background-color: #252935;
+  border-radius: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.form input, .form textarea {
+  background: #141A29;
+  border: none;
+  color: #BDC6D7;
+}
+.form .alert {
+  font-size: 0.75rem;
+  color: #598c88;
+  margin: 0;
+  padding: 2px;
+}
+.form label {
+  color: #7c828c;
+  font-size: 0.8rem;
+}
+.form input:focus, .form textarea:focus {
+  box-shadow: 0 0 0 0.1rem #7c828c;
+}
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus,
+.form input:-webkit-autofill:active {
+  -webkit-text-fill-color: #BDC6D7 !important;
+  -webkit-box-shadow: 0 0 0px 1000px #252935 inset;
+}
+
+.buttonRow {
+  padding-top: 1rem;
+}
+
+.buttonClass {
+  background-color: #BDC6D7;
+  border: 2px solid #BDC6D7;
+  color: #141A29;
+  transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 10px 25px 10px 25px;
+}
+
+.buttonClass:hover {
+  background-color: rgba(189, 198, 215, 0.2);
+  color: #BDC6D7;
+  transform: scale(1.03);
+}
+
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.fa-solid {
+  color: #7c828c;
+}
+
+@media screen and (max-width: 500px) {
+  .contactContainer {
+    max-width: 70%;
+  }
+  .form {
+    padding: 30px;
+  }
+  .contactWrapper {
+    padding-top: 100px;
+  }
+  .contactLinks {
+    display: block;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  .contactContainer {
+    max-width: 70%;
+  }
+  .form {
+    padding: 80px;
+  }
+  .contactWrapper {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .contactContainer {
+    max-width: 70%;
+  }
+  .form {
+    padding: 80px;
+  }
+}/*# sourceMappingURL=contact.component.css.map */

@@ -1,43 +1,110 @@
 [
   {
-  "id": 1,
-  "attributes": {
-    "Title": "The Cakery",
-    "Summary": "Designed and built a 5 page e-commerce website based on client specified parameters. Displays and filters product info using Javascript.",
-    "WebLink": "https://l-millerd.github.io/The-Cakery/",
-    "GitLink": "https://github.com/L-millerd/The-Cakery",
-    "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659814795/small_cakery_screenshot_db5a222d1e.jpg",
-    "Skills": [
-          {
-            "SkillName": "JavaScript"
-          },
-          {
-            "SkillName": "HTML"
-          },
-          {
-            "SkillName": "SCSS"
-          },
-          {
-            "SkillName": "Illustrator"
-          }
-        ]
-    }
-  },
-
+    "id": 1,
+    "attributes": {
+      "Title": "Cleveland Meats",
+      "Summary": "Designed and built client website using pre-existing Wix domain. The design uses bold product photography and strong graphics to emphasize the upbeat energy of the company and showcase their range of products. Also provided photography, editing and copy-writing.",
+      "WebLink": "https://www.clevelandmeats.com/",
+      "GitLink": null,
+      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1691710552/cover-ClevelandMeats_ebvzrb.jpg",
+      "Skills": [
+            {
+              "SkillName": "Figma"
+            },
+            {
+              "SkillName": "Adobe"
+            },
+            {
+              "SkillName": "Wix"
+            }
+          ]
+      }
+    },
   {
     "id": 2,
     "attributes": {
-      "Title": "Two Tugs Brewery",
-      "Summary": "Designed and built 5 page business page based on client specifications. Branding/packaging created with illustrator and figma, site developed with HTML and CSS.",
-      "WebLink": "https://l-millerd.github.io/TwoTugs/",
-      "GitLink": "https://github.com/L-millerd/TwoTugs",
-      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1659814904/small_cover_TT_c6f466dd3c.jpg",
+      "Title": "Lorrie Wager Art",
+      "Summary": "Developed branding and portfolio website for Lorrie Wager to showcase her art and services. Branding and web design were created using the adobe creative suite and figma. While web development was executed using Wordpress, PHP and CSS",
+      "WebLink": "https://lorriewagerart.com/",
+      "GitLink": null,
+      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1691710552/cover-LorrieWagerArt_luyu4t.jpg",
       "Skills": [
+            {
+              "SkillName": "Wordpress"
+            },
             {
               "SkillName": "HTML"
             },
             {
               "SkillName": "CSS"
+            },
+            {
+              "SkillName": "Adobe"
+            }
+          ]
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "Title": "Frames Film Program",
+        "Summary": "Worked with the client to design and develop a website providing thorough information for a student program that would appeal to prospective students, student caseworkers and program auditors. Provided a branding update to modernize the website without creating the need to reproduce all assets. ",
+        "WebLink": "https://www.framesfilmprogram.com/",
+        "GitLink": null,
+        "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1691710840/cover-FramesFilm_uw5wkg.jpg",
+        "Skills": [
+              {
+                "SkillName": "Wix"
+              },
+              {
+                "SkillName": "Figma"
+              },
+              {
+                "SkillName": "Adobe"
+              }
+            ]
+        }
+      },
+
+  {
+    "id": 4,
+    "attributes": {
+      "Title": "The Cakery",
+      "Summary": "Designed and built a 5 page e-commerce website based on client specified parameters using HTML SCSS and Javascript.",
+      "WebLink": "https://l-millerd.github.io/The-Cakery/",
+      "GitLink": "https://github.com/L-millerd/The-Cakery",
+      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1691710552/cover-Cakery_oe6sxe.jpg",
+      "Skills": [
+            {
+              "SkillName": "JavaScript"
+            },
+            {
+              "SkillName": "HTML"
+            },
+            {
+              "SkillName": "SCSS"
+            },
+            {
+              "SkillName": "Illustrator"
+            }
+          ]
+      }
+    },
+
+  {
+    "id": 5,
+    "attributes": {
+      "Title": "Two Tugs Brewery",
+      "Summary": "Designed and built 5 page business page based on client specifications. Website developed with HTML, SCSS and Javascript, branding and packaging created with illustrator and figma,",
+      "WebLink": "https://l-millerd.github.io/two-tugs-brewing/",
+      "GitLink": "https://github.com/L-millerd/two-tugs-brewing",
+      "ImageLink": "https://res.cloudinary.com/l-millerd/image/upload/v1691710552/cover-TwoTugs_jagrn5.jpg",
+      "Skills": [
+            {
+              "SkillName": "HTML"
+            },
+            {
+              "SkillName": "SCSS"
             },
             {
               "SkillName": "Illustrator"

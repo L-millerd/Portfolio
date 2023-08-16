@@ -76,7 +76,8 @@
         </div>
 
         <div class="form-group">
-          <label for="exampleFormControlTextarea1">Message</label>
+          <div class="col">
+          <label for="inputMessage">Message</label>
           <textarea
             name="inputMessage"
             #message_="ngModel"
@@ -86,7 +87,7 @@
             ng-reflect-minlength="5"
             rows="5"></textarea>
             <div class="alert" role="alert" *ngIf="message_.touched && message_.invalid">Please enter a message</div>
-
+          </div>
         </div>
 
         <div class="form-group buttonRow">

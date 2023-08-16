@@ -1,0 +1,158 @@
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: #141A29;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #BDC6D7;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #BDC6D7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  color: #BDC6D7;
+}
+
+.fa-solid {
+  color: #7c828c;
+}
+
+.row {
+  --bs-gutter-x: 0;
+}
+
+.navbar {
+  font-family: "Poppins", sans-serif;
+  background-color: #141A29;
+}
+.navbar .navLogo {
+  max-width: 50px;
+}
+.navbar .navImages a {
+  padding-left: 30px;
+}
+.navbar .navImages a .socialIcons {
+  color: #7fcdc7;
+  max-width: 40px;
+  padding: 6px;
+}
+.navbar .navImages a .navLogo:hover {
+  transform: rotate(360deg);
+  transition: transform 1s ease-out;
+}
+.navbar ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar li {
+  display: table-cell;
+  position: relative;
+  padding: 15px 0;
+}
+.navbar li a {
+  color: #BDC6D7;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+.navbar li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #BDC6D7;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar li a:hover {
+  color: #BDC6D7;
+}
+.navbar li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+.navbar li .nav-link {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  color: none !important;
+  border-color: none !important;
+}
+
+.burger {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.fa {
+  color: #7fcdc7;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-height: 300px) {
+  ul {
+    margin-top: 40px;
+  }
+}
+.hoverLine {
+  display: inline-block;
+}
+
+.hoverLine::after {
+  display: block;
+  content: "";
+  border-bottom: solid 3px #7fcdc7;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  padding-top: 5px;
+}
+
+.hoverLine:hover:after {
+  transform: scaleX(0.7);
+}
+
+@media screen and (max-width: 500px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 992px) {
+  .listCol ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+@media screen and (min-width: 1050px) {
+  ul {
+    width: 600px;
+  }
+}/*# sourceMappingURL=nav.component.css.map */

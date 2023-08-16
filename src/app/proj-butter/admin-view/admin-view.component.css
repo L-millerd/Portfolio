@@ -1,67 +1,57 @@
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
   font-size: 0.8rem;
   font-weight: 700;
   color: white;
 }
 
-
-
-.btn{
+.btn {
   font-size: 0.8rem;
 }
 
-.table{
+.table {
   font-size: 0.8rem;
 }
 
-.image{
+.image {
   width: 200px;
 }
 
-.title{
+.title {
   font-weight: 700;
 }
 
-h1{
-  font-family: 'Roboto', sans-serif;
+h1 {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 3em;
   text-align: center;
   padding: 2em 0px 2em 0px;
 }
 
-.heading{
-  font-family: 'Roboto', sans-serif;
+.heading {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.6em;
   padding-top: 1em;
 }
 
-.form-switch{
+.form-switch {
   padding-left: none;
 }
 
-
-.allContainer{
+.allContainer {
   max-width: 90%;
   padding-top: 100px;
   margin: auto;
-  // min-height: 100vh;
 }
 
-
-/////
-
-.product-container{
-}
-
-.admin-product-card{
+.admin-product-card {
   border: solid 1px lightgrey;
   border-radius: 5px;
   margin: auto;
 }
 
-.center{
+.center {
   margin: auto;
-}
+}/*# sourceMappingURL=admin-view.component.css.map */

@@ -1,0 +1,108 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.pageContainer {
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.editContainer {
+  max-width: 70%;
+  padding: 50px;
+  background-color: #f1f1f1;
+  min-width: 800px;
+  border-radius: 10px;
+  height: -moz-max-content;
+  height: max-content;
+}
+.editContainer .topLinks {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  font-size: 0.7em;
+  color: #7c828c;
+  font-weight: 500;
+  cursor: pointer;
+}
+.editContainer .topLinks a {
+  text-decoration: none;
+  color: #7c828c;
+}
+.editContainer .heading {
+  text-align: center;
+}
+.editContainer h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.3em;
+  text-align: center;
+}
+.editContainer .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.editContainer .form-label {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.editContainer .form-control {
+  font-size: 0.8rem;
+}
+.editContainer .submitButtons {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  padding-top: 20px;
+}
+.editContainer .buttonClass {
+  padding: 12px 0px 12px 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: black;
+  border: none;
+  min-width: 150px;
+}
+
+.messages {
+  font-size: 0.8rem;
+  text-align: right;
+}
+.messages .fa-solid {
+  padding-right: 10px;
+}
+.messages .success {
+  font-weight: 500;
+  padding-top: 20px;
+  color: green;
+}
+.messages .success .fa-solid {
+  color: green;
+}
+.messages .error {
+  font-weight: 500;
+  padding-top: 20px;
+  color: rgb(158, 20, 20);
+}
+.messages .error .fa-solid {
+  color: rgb(158, 20, 20);
+}
+
+.footerClass {
+  min-height: 200px;
+  background-color: black;
+  margin-top: 50px;
+}
+
+.stock {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}/*# sourceMappingURL=admin-edit.component.css.map */

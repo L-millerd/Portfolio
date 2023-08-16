@@ -32,6 +32,15 @@ export class HomeComponent implements OnInit {
     this.vs.scrollToAnchor('three');
   }
 
+  scrollProjectsButton(){
+    this.vs.scrollToAnchor('projects');
+  }
+
+  scrollContactButton(){
+    this.vs.scrollToAnchor('contact');
+  }
+
+
 
   ngOnInit(): void {
     gsap.registerPlugin(ScrollTrigger);

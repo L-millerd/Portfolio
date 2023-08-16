@@ -72,10 +72,7 @@
           }
         }
         .cardImage{
-          // background-size: cover;
-          background-repeat: no-repeat;
-          opacity: 0.8;
-          border-radius: 0px 20px 0px 0px;
+          opacity: 0.9;
           padding-right: 66px;
 
           .bg-img{
@@ -83,6 +80,7 @@
             background-repeat: no-repeat;
             background-size: contain;
             background-position-y: center;
+
           }
         }
       }
@@ -112,10 +110,18 @@
   padding:10px;
 }
 
-.buttonClass:hover {
-  background-color: rgb(189, 198, 215, .2);
-  color: $light-color;
-  @include hoverGrow();
+// .buttonClass:hover {
+//   background-color: rgb(189, 198, 215, .2);
+//   color: $light-color;
+//   @include hoverGrow();
+// }
+
+@media(hover: hover){
+  .buttonClass:hover {
+    background-color: rgb(189, 198, 215, .2);
+    color: $light-color;
+    @include hoverGrow();
+  }
 }
 
 .btn:focus{

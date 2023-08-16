@@ -1,0 +1,135 @@
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: #141A29;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #BDC6D7;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #BDC6D7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  color: #BDC6D7;
+}
+
+.fa-solid {
+  color: #7c828c;
+}
+
+.projectsContainer {
+  background-color: #141A29;
+  display: flex;
+  justify-content: center;
+}
+.projectsContainer .projectsContent {
+  width: 70%;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper {
+  padding-top: 45px;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard {
+  border-radius: 20px;
+  background-color: #252935;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 22px 4px rgba(0, 0, 0, 0.2);
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo h3 {
+  font-size: 1.5em;
+  color: #BDC6D7;
+  padding-bottom: 10px;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo ul li {
+  display: inline;
+  color: #7fcdc7;
+  border: solid 1px #598c88;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo p {
+  color: #BDC6D7;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo .linksRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardInfo .linksRow .fa-brands {
+  color: #BDC6D7;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardImage {
+  opacity: 0.9;
+  padding-right: 66px;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard .cardImage .bg-img {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: center;
+}
+.projectsContainer .projectsContent .projectList .projectCardWrapper .projectCard:hover {
+  transform: scale(1.03);
+}
+.projectsContainer .buttonClass {
+  background-color: #BDC6D7;
+  border: 2px solid #BDC6D7;
+  color: #141A29;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 15px;
+  min-width: 125px;
+  padding: 10px;
+}
+@media (hover: hover) {
+  .projectsContainer .buttonClass:hover {
+    background-color: rgba(189, 198, 215, 0.2);
+    color: #BDC6D7;
+    transform: scale(1.03);
+  }
+}
+.projectsContainer .btn:focus {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 500px) {
+  .cardInfo {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  .cardInfo {
+    padding: 66px;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .cardInfo {
+    padding: 66px;
+  }
+}/*# sourceMappingURL=projects.component.css.map */

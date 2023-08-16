@@ -1,0 +1,106 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+}
+
+h1 {
+  margin: auto;
+  font-weight: 500;
+  text-align: center;
+  padding: 50px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: rgb(48, 48, 48);
+}
+
+.allContainer {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productContainer {
+  padding-bottom: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+.productContainer .carousel-inner {
+  max-width: 400px !important;
+}
+.productContainer .productContent {
+  max-width: 600px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.productContainer .productContent .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1rem;
+}
+.productContainer .productContent .description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.productContainer .productContent .price {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.productContainer .productContent .btnRow {
+  width: 70%;
+  padding-top: 2em;
+}
+.productContainer .productContent .heart {
+  background-color: grey;
+}
+.productContainer .productContent .btn-row {
+  display: flex;
+  gap: 0.3rem;
+  padding-top: 20px;
+}
+.productContainer .productContent .btn-row .add-btn {
+  padding: 12px 0px 12px 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.8em;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+}
+.productContainer .productContent .btn-row button:hover {
+  opacity: 0.7;
+  transition-duration: 0.2s;
+}
+.productContainer .productContent .btn-row .heart-btn {
+  padding: 12px 0px 12px 0px;
+  font-size: 0.8em;
+  border-radius: 5px;
+  background-color: #b8b8b8;
+  border: none;
+  color: #7c828c;
+}
+
+.footerClass {
+  min-height: 200px;
+  background-color: black;
+  margin-top: 50px;
+}
+
+.stock {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.7rem;
+}/*# sourceMappingURL=product-details.component.css.map */

@@ -8,6 +8,7 @@ import { ViewportScroller } from '@angular/common';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
+
 export class NavComponent implements OnInit {
 
   constructor(private vs: ViewportScroller) { }

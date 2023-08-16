@@ -1,0 +1,158 @@
+.wrapper {
+  background-color: #141A29;
+  overflow: hidden;
+  background-size: cover;
+  position: absolute;
+}
+
+.homeContainer {
+  height: 90vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heroSection {
+  position: absolute;
+  z-index: 1;
+  padding: 40px;
+}
+.heroSection .heroContent {
+  max-width: 1000px;
+}
+.heroSection .heroContent .intro {
+  color: #BDC6D7;
+  position: relative;
+  overflow: hidden;
+}
+.heroSection .heroContent .name {
+  color: #BDC6D7;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.heroSection .heroContent .title {
+  color: rgb(127, 205, 199);
+  font-weight: 300;
+  font-size: 2rem;
+}
+.heroSection .heroContent .description {
+  color: #BDC6D7;
+  font-size: 0.8rem;
+}
+.heroSection .heroContent .skills {
+  padding-top: 15px;
+  background: linear-gradient(to right, #7c828c 40%, rgb(127, 205, 199) 50%, #7c828c 60%, #7c828c 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: rgba(255, 255, 255, 0);
+  background-size: 200%;
+  animation: shine 4s infinite;
+  font-size: 0.8rem;
+}
+.heroSection .heroContent .skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0.3rem;
+  letter-spacing: 0.2px;
+  padding-left: 0;
+  line-height: 1.2;
+}
+.heroSection .heroContent .buttonsRow {
+  padding-top: 20px;
+}
+
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.number {
+  background-color: #141A29;
+  color: rgb(127, 205, 199);
+  border-radius: 0px 20px 20px 0px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 15px 0px 15px 33px;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 10%;
+}
+
+.vertLine {
+  width: 2.6rem;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  border-right: 1px solid #497e7a;
+}
+
+.arrows {
+  color: #497e7a;
+  padding-left: 0.6rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.top {
+  color: #497e7a;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+
+.buttonClass {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 15px;
+  min-width: 125px;
+  padding: 10px;
+  background-color: rgb(127, 205, 199);
+  color: #141A29;
+  border: 2px solid rgb(127, 205, 199);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+  .buttonClass:hover {
+    background-color: rgba(127, 205, 199, 0.2);
+    color: rgb(127, 205, 199);
+    transform: scale(1.03);
+  }
+}
+.btn:focus {
+  box-shadow: none !important;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .vertLine {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  .vertLine {
+    display: none;
+  }
+  .number {
+    display: none;
+  }
+}/*# sourceMappingURL=home.component.css.map */

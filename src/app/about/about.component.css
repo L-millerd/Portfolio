@@ -1,0 +1,141 @@
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: #141A29;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #BDC6D7;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #BDC6D7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  color: #BDC6D7;
+}
+
+.fa-solid {
+  color: #7c828c;
+}
+
+.aboutContainer {
+  background-color: #141A29;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aboutSection {
+  width: 90%;
+  border-radius: 20px 0 0 20px;
+}
+.aboutSection .aboutContent {
+  width: 90%;
+}
+.aboutSection .aboutContent .intro {
+  color: #BDC6D7;
+  position: relative;
+  overflow: hidden;
+}
+.aboutSection .aboutContent .title {
+  color: #7fcdc7;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.aboutSection .aboutContent .description {
+  color: #BDC6D7;
+  font-size: 0.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #598c88;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #7fcdc7;
+}
+
+.skills .skills_row {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 1.9rem;
+  padding-top: 1rem;
+}
+.skills .box {
+  width: 100px;
+  gap: 0.4rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.skills .box:hover {
+  transform: rotate(15deg) scale(1.09);
+}
+.skills svg path {
+  fill: #598c88;
+}
+.skills polygon {
+  fill: #598c88;
+}
+.skills .skillName {
+  font-size: 0.7rem;
+  color: #7c828c;
+}
+
+.buttonClass {
+  border: solid 2px #BDC6D7;
+  color: #BDC6D7;
+  transition: all 0.2s ease-in-out;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-right: 15px;
+  min-width: 125px;
+  padding: 10px;
+}
+
+.buttonClass:hover {
+  box-shadow: 0 0 10px 1px #7fcdc7;
+  color: #7fcdc7;
+}
+
+@media screen and (max-width: 500px) {
+  .aboutSection {
+    background-color: none;
+  }
+  .aboutContent {
+    padding: 30px;
+  }
+  .skills_row {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1050px) {
+  .aboutContent {
+    padding: 75px;
+  }
+  .skills_row {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .aboutContent {
+    padding: 0px 100px 100px 100px;
+  }
+}/*# sourceMappingURL=about.component.css.map */

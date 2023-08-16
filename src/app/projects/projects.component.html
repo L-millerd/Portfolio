@@ -2,13 +2,13 @@
   <div class="projectsContent">
     <h2><i class="fa-solid fa-gear"></i> Projects</h2>
     <hr />
-    <p>Please see Git links for full project</p>
+    <!-- <p>Please see Git links for full project</p> -->
     <section class="projectList">
+      
       <div class="projectCardWrapper">
         <div class="projectCard row">
           <div class="cardInfo col-sm-12 col-md-12 col-lg-7">
             <h3>Butter Snowboards</h3>
-
             <ul class="skills">
               <li>Angular</li>
               <li>Node.js</li>
@@ -16,7 +16,6 @@
               <li>REST API</li>
               <li>TypeScript</li>
             </ul>
-
             <p>
               Microservices based e-commerce SPA created as part of a 4 hour
               challenge. Product display and CRUD admin portal created using
@@ -27,7 +26,7 @@
               <a
                 routerLink="/projects/butter-snowboards/products"
                 target="_blank"
-                ><button class="btn buttonClass">Demo</button></a
+                ><button class="btn buttonClass">View</button></a
               >
               <a
                 href="https://github.com/L-millerd/Ecommerce-Snowboard"
@@ -41,7 +40,7 @@
             <div
               class="bg-img"
               style="
-                background-image: url('https://res.cloudinary.com/l-millerd/image/upload/v1659814819/small_butter_screenshot_ae7a3b0bf5.jpg');
+                background-image: url('https://res.cloudinary.com/l-millerd/image/upload/v1692213740/cover-Butter_rkr2rx.png');
               "
             ></div>
           </div>
@@ -61,11 +60,17 @@
             <p>{{ project.attributes.Summary }}</p>
             <div class="linksRow">
               <a [href]="project.attributes.WebLink" target="_blank"
-                ><button class="btn buttonClass">Demo</button></a
+                ><button class="btn buttonClass">View</button></a
               >
-              <a [href]="project.attributes.GitLink" target="_blank"
+              <!-- <a [href]="project.attributes.GitLink" target="_blank"
                 ><i class="socialIcon fa-xl fa-brands fa-github"></i
-              ></a>
+              ></a> -->
+              <div *ngIf="project.attributes.GitLink">
+                <a [href]="project.attributes.GitLink" target="_blank"
+                  ><i class="socialIcon fa-xl fa-brands fa-github"></i
+                ></a>
+             </div>
+              
             </div>
           </div>
 

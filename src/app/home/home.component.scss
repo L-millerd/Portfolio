@@ -81,7 +81,7 @@ $dark-color2:#252935;
         gap: 0.3rem;
         letter-spacing: .2px;
         padding-left: 0;
-        line-height: 1;
+        line-height: 1.2;
       }
 
     }
@@ -158,11 +158,20 @@ $dark-color2:#252935;
   transition: all .2s ease-in-out;
 }
 
-.buttonClass:hover {
-   background-color: rgb(127, 205, 199, .2);
-  color: $accent-color;
-  transform: scale(1.03);
+// .buttonClass:hover {
+//    background-color: rgb(127, 205, 199, .2);
+//   color: $accent-color;
+//   transform: scale(1.03);
+// }
+
+@media(hover: hover){
+  .buttonClass:hover {
+    background-color: rgb(127, 205, 199, .2);
+   color: $accent-color;
+   transform: scale(1.03);
+  }
 }
+
 
 .btn:focus{
   box-shadow: none !important;

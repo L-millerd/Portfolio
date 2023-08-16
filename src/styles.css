@@ -1,0 +1,33 @@
+html {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(15px + 0.390625vw);
+  background-color: #141A29;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #BDC6D7;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  color: #BDC6D7;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+hr {
+  color: #BDC6D7;
+}
+
+.fa-solid {
+  color: #7c828c;
+}/*# sourceMappingURL=styles.css.map */
